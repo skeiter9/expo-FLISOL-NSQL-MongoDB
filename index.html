@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NOSQL, que es cuando usarlo, tipos de BD NOSQL y cuando usar MongoDB</title>
+
+    <link rel="stylesheet" href="css/kinout-skeiter9.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="shortcut icon" href="image/favicon-yetsu.ico">
+</head>
+
+<body>
+    <div class="kinout bck silver">
+
+        <section>
+            <article>
+                <header class="box">
+                    <h4>FLISOL Chiclayo 2013</h4>
+                </header>
+                <div class="row margin_top_5">
+                    <div class="column_2 bck white rounded">
+                        <img src="image/yetLogo.jpg" alt="Logo yetsu" class="img_flex " />
+                    </div>
+                    <div class="column_7 padding_top_3">
+                        <h1 class="text center">NOSQL,Base de datos no relacionales y MongoDB</h1>
+                    </div>
+                </div>
+                <div class="row margin_top_5">
+                    <div class="column_2 rounded offset_7">
+                        <h3 > <a class="text white" href="http://twitter.com/skeiter9">@skeiter9</a></h3>
+                    </div>
+                    <div class="column_1 rounded">
+                        <img src="image/sk9.png" alt="@skeiter9" class="img_flex " />
+                    </div>
+                </div>
+                <footer class="bck dark">
+                    <h3 class="text white"> <a href="http://twitter.com/yetsupe">@yetsupe</a> </h3>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header class="box"><h2>¿ Por qué #NoSQL está de moda ?</h2></header>
+                <div class="row margin_top_2">
+                    <div class="column_2">
+                        <img src="http://josepjroca.files.wordpress.com/2011/08/thinking-meme-52169236096_xlarge.png?w=620" class="img_flex rounded">
+                    </div>
+                    <div class="column_7">
+                        <p class="text big">
+                            Hoy en día mucha gente se conecta al bastao y genial mundo de internet (hoo Internet), el tamaño de datos que procesan las aplicaciones hoy es muy diferente al de 5 años, Websites como Facebook o google, procesan +500 terabytes diarios, procesan mucha informaciòn en tiempo real, entonces imaginemonos cuantas consultas procesan al mismo tiempo en paralelo, ahora la gran pregunta es
+                            con el uso masivo de internet, las soluciones seran las mismas de hace años atras ? que significa todo esto ?
+                        </p>
+                    </div>
+                    
+                </div>
+                <div data-step="boom" class="row">
+                    <div class="column_4 margin_top">
+                        <p class="text big">A este incremento masivo de uso de internet nos trajo consigo lo que conocemos como <a href="http://es.wikipedia.org/wiki/Big_data"> BIG DATA </a> </p>
+                    </div>
+                    <div class="column_2">
+                        <img src="http://www.nocturnar.com/forum/attachments/humor/32391d1339522979-todos-memes-ewbte.png" class="img_flex rounded">
+                    </div>
+                    <div class="column_3 bck white">
+                      <img src="http://www.ebanking.cl/wp-content/uploads/2012/11/big-data.png" class="img_flex rounded"> 
+                    </div>
+                    
+                </div>
+            </article>
+            <article>
+                <header class="box"><h2>Quienes lidean con BIG DATA ?</h2></header>
+                <div class="row margin_top_2">
+                    <div class="column_2">
+                        <img src="http://news.bioscholar.com/wp-content/uploads/2012/09/google-facebook-amazon.png" class="img_flex rounded">
+                    </div>
+                    <div class="column_8">
+                        <p class="text big">
+                            Estas grandes companias han sabido dar solución a la gran demanda que ha involucrado BIG DATA, cada una con una soluciòn distinta
+                            , cada una ha desarrollado su propio sistema de servidores de muy alta disponibilidad, han invertido mucho en infraestructura de hardware y software y es por eso que hoy vienen ganando los retos que les propone big data, otra cosa que tienen en comun es que solo han hecho pùblico poca información con respecto a sus sistemas de servidores.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div data-step="boom"  class="column_2 ">
+                        <img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=16288275" class="img_flex rounded">
+                    </div>
+                    <div data-step="zoom" class="column_6 offset_1">
+                        <h3>Afortunadamente tenemos <h1><a data-step="zoom" href="http://hadoop.apache.org/">hadoop</a></h1></h3>
+                    </div>
+                </div>
+                <div data-step="zoom" class="row">
+                    <div class="column_2 offset_1 bck white rounded">
+                        <img src="http://www.nocturnar.com/forum/attachments/humor/32391d1339522979-todos-memes-ewbte.png" class="img_flex rounded">
+                    </div>
+                    <div class="column_5 offset_1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Hadoop_logo.svg" class="img_flex rounded">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="row margin_top_5">
+                    <img src="http://smist08.files.wordpress.com/2012/01/nosql.png" alt="" class="img_flex"/>
+                </div>
+                <footer class="box">
+                    <h1>Not Only SQL !</h1>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header class="box">
+                    <h2>¿ Qué es NOSQL ?</h2>
+                </header>
+                <div class="row margin_top ">
+                    <p class="text big_2">
+                        Esta Tendencia de Base de datos se centra en ser no relacional, distribuido, Open Source y escalable horizontalmente; No hacen uso de sql, y por ende no tienen propiedades como joins, estructuras fijas (tablas,tipos de datos) y tampoco garantizan el cumplimiento total de <a href="http://es.wikipedia.org/wiki/ACID">ACID</a>. La gran ventaja de este modelo de base de datos se ve reflejado en el manejo de alto tràfico, la escalabilidad y el rendimiento son caracteriscticas de este modelo muy util a la hora de almacenar y devolver informaciòn. 
+                    </p>
+                    <div class="column_4 margin_top_2">
+                        <img src="http://www.dataversity.net/wp-content/uploads/2011/06/nosql-logos.png" alt="Deferntes base de datos nosql" class="img_flex rounded"/>
+                        <a href="http://nosql-database.org/" class="text center"> nosql-database.org</a>
+                    </div>
+                    <div class="column_7 margin_top">
+                        <div class="bck green padding rounded ">
+                            <p class="text big">Al Dìa de hoy tenemos actualmente 150 BD NOSQL documentadas según <a href="http://nosql-database.org/" class="text color red italic" > nosql-database.org</a> </p>
+                        </div>
+                        <div class="column_3">
+                            <p class="text left big margin_top">
+                                Sus categorias son:
+                            </p>
+                            <ul class="text left margin_top big circle">
+                                <li>Wide Column Store</li>
+                                <li>Document Store</li>
+                                <li>Key Value / Tuple Store</li>
+                                <li>Graph Databases </li>
+                                <li>Multimodel Databases</li>
+                                <li>Object Databases</li>
+                                <li>Grid & Cloud Database Solutions</li>
+                                <li>XML Databases</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <script src="js/QuoJS.js"></script>
+    <script src="js/raf.js"></script>
+    <script src="js/kinout-1.0.js"></script>
+    <script>
+        $$(document).ready(function() {
+            KINOUT.init();
+        });
+    </script>
+
+</body>
+</html>
